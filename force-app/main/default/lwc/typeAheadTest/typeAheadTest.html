@@ -1,0 +1,25 @@
+<template>
+     <!-- <vlocity_cmt-b2b-typeahead type="text"
+        oninput={handletypeaheadInput}
+       
+        options={typeaheadOptions}
+        placeholder="Placeholder"
+        required=true>
+    </vlocity_cmt-b2b-typeahead> -->
+
+     <vlocity_cmt-typeahead type="text" options={typeaheadOptions}
+        icon-name-right="utility:empty" data-omni-input
+        onselect={handleAddressSelection} onkeyup={searchHandler}>
+        <button
+            class="slds-button slds-button_icon nds-button nds-button_icon"
+            slot="iconRight" onclick={handleEditAddress}
+            id=1>
+            <div style="pointer-events:auto">
+                <vlocity_cmt-icon icon-name="utility:edit"
+                    extraclass="slds-button__icon nds-button__icon"
+                    size="x-small"></vlocity_cmt-icon>
+            </div>
+        </button>
+    </vlocity_cmt-typeahead>
+
+</template>
